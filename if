@@ -1,4 +1,4 @@
-# 1. if문
+# 1. if
 
 a,b = input().split()
 a = int(a)
@@ -10,7 +10,7 @@ elif a<b:
 else:
     print("==")
     
-# 2. 시험 성적
+# 2. exam score
 
 score = int(input())
 
@@ -25,7 +25,7 @@ elif score >= 60:
 else:
     print("F")
     
-# 3. 윤년
+# 3. leap year
 year = int(input()) 
 
 if (year%4 == 0) and (year%100 != 0):
@@ -35,7 +35,7 @@ elif year%400 == 0:
 else:
     print("0")
     
-# 4. 사분면
+# 4. quadrant
 
 x = int(input())
 y = int(input())
@@ -49,11 +49,11 @@ elif x<0 and y<0:
 else:
     print("4")
     
-# 5. 알람시계
+# 5. alarm clock
 
 H, M = input().split()
 
-# 분 단위로 변경
+# change the time unit into minute
 time = 60*int(H) + int(M) - 45
 if time <0:
     time += 60*24
