@@ -53,8 +53,7 @@ else:
 
 H, M = input().split()
 
-# change the time unit into minute
-time = 60*int(H) + int(M) - 45
+time = 60*int(H) + int(M) - 45 # change the time unit into minute
 if time <0:
     time += 60*24
 H    = time//60
