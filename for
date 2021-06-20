@@ -2,28 +2,28 @@
 
 N = int(input())
 
-for i in range(0,9):
-  n = N*(i+1)
-  print('n')
+for i in range(9):
+    n = N*(i+1)
+    print(f'{N} * {i+1} = {n}')
 
 # 2. A + B - 3
 
 T = int(input())
 
-for i in range(0,T):
-  A,B = input().split()
+for i in range(T):
+    A,B = input().split()
 
-  A = int(A)
-  B = int(B)
-  print(A+B)
+    A = int(A)
+    B = int(B)
+    print(A+B)
   
 # 3. sum
 
 n = int(input())
 sum = 0
 
-for i in range(0,n):
-  sum += i
+for i in range(1,n+1):
+    sum += i
 print(sum)
 
 # 4. quick A+B
