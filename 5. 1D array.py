@@ -64,4 +64,4 @@ for i in range(C):
           else:
               pass
       a = good/n*100
-      print('{.3f}'.format(a))
+      print(f'{a:.3f}')
