@@ -10,7 +10,18 @@ print(fun_sum(a))
 
 # self number
 def self_num(a):
-    N_list = []
+    result = a
     digit = len(str(a))
     for i in range(digit):
-        a%(10*(i+1))
+        b = a%10
+        result += b
+        a = int(a/10)
+    return result
+
+for i in range(1,10*4+1):
+    if self_num(i)==i:
+        print(i)
+    else:
+        pass
+    
+# 한수
