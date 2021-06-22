@@ -33,13 +33,13 @@ for i in range(len(a)):
 # self number (better solution) 
 # https://github.com/wook2124/Algorithm-Test/tree/master/%EB%B0%B1%EC%A4%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B5%AC%ED%98%84
 natural = set(range(1,10000))
-self_num= set()
+gen_num= set()
 
 for i in range(1,1001):
     for j in str(i):
         i += int(j)
-    self_num.add(i)
-self_num = sorted(natural - self_num)
+    gen_num.add(i)
+self_num = sorted(natural - gen_num)
 
 for i in self_num:
     print(i)
