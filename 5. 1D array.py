@@ -1,26 +1,33 @@
 # min/max
 
 N   = int(input())
-N_list = map(int,input().split())
+N_list = list(map(int,input().split()))
 
 print(f'{min(N_list)} {max(N_list)}')
 
 # max value
-a = int(input())
 N_list = []
-
-while a!=0:
-    N_list = append(N_list,a)
+for _ in range(9):
     a = int(input())
+    N_list.append(a)
+    
 max_value = max(N_list)
-print(max_value)
-index_max = N_list.index(max_value)
-print(f'{max_value}\n{index_max})
+max_index = N_list.index(max_value)+1
+print(f'{max_value}\n{max_index}')
       
  # How many numbers?
 a = 1
 for _ in range(3):
     a = a*int(input())
+
+N_list = [0]*10
+for _ in range(len(str(a))):
+    b = a%10
+    N_list[b] = N_list[b] + 1
+    a = int(a/10)
+    
+for i in range(10):
+    print(N_list[i])
 
       
 # remainder
