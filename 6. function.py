@@ -45,3 +45,28 @@ for i in self_num:
     print(i)
     
 # 한수
+N = int(input())
+
+def han(N):
+    a        = 0
+    N_list   = []
+    set_list = []
+    
+    for j in str(N):
+        N_list.append(int(j))
+    
+    for i in range( len(N_list) - 1 ):
+        set_list.append( N_list[i+1] - N_list[i] )
+    
+    if len(set(set_list)) == 1:
+        a = 1
+        
+    return a
+
+if N < 100:
+    print(N)
+else:
+    a = 99 
+    for i in range(100,N+1):
+        a += han(i)
+    print(a)
