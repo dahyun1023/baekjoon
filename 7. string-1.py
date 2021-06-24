@@ -25,25 +25,26 @@ for i in word:
     N_list.append(i)
 
 l = len(N_list) - 1
-for i in N_list.reverse():
-    j = ascii_list.find(ord(i))
+N_list.reverse()
+for i in N_list:
+    j = ascii_list.index(ord(i))
     result_list[j] = l
     l -= 1
-
+    
+for i in range(26):
+    print(result_list[i], end=' ')    
+    
+    
 # repeatitive string
-T = int(input())
-N_list = []
-for _ in range(T):
-    R,S = input().split()
-    R = int(R)
-    for i in word:
-        N_list.append(i*3)
-    print(N_list[:])
+T      = int(input())
 
-# study of words
-small_ascii= list(range(97,123))
-big_ascii  = list(range(65,91))
-result_list = [0]*26*2 # small, bit order
-word = input()
-for i in word:
-  
+for _ in range(T):
+    N_list = []
+    R,S = input().split() 
+    R   = int(R)
+    
+    for i in str(S):
+        N_list.append(i*R)
+    for i in range(len(N_list)-1):
+        print(N_list[i],end='')
+    print(N_list[-1],end='\n')
