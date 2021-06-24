@@ -6,10 +6,10 @@ print(ord(a))
 # sum
 
 N = int(input())
-num = str(input())
+num = int(input())
 sum = 0
 
-for i in num:
+for i in str(num):
     sum += int(i)
 print(sum)
 
