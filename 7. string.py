@@ -1,7 +1,7 @@
 # ascii code
 
 a = input()
-print(ord("a"))
+print(ord(a))
 
 # sum
 
