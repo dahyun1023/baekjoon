@@ -46,3 +46,18 @@ while True:
     
     
 # snail wants to go up
+A,B,V = map(int, input().split())
+
+day    = 1
+height = 0
+while True:    
+    height += A
+    if height >= V:
+        print(day)
+        break
+    else:
+        height = height - B
+        day    += 1
+        
+# --> calculation time is too long
+
