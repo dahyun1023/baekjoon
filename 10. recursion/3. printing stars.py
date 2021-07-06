@@ -1,6 +1,6 @@
 N = int(input())
 
-def basic:
-    print('*'*3)
-    print(f'* *')
-    print('*'*3)
+def basic(k):
+    print('***'*3**(k-1))
+    print(f'* *'*3**(k-1))
+    print('***'*3**(k-1))
